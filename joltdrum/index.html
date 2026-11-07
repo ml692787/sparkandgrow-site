@@ -29,109 +29,64 @@
 <script>document.documentElement.classList.add('js')</script>
 <script src="/assets/site.js" defer></script>
 </head>
-<body>
+<body class="jd">
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="top">
+<header class="top jdtop">
   <div class="wrap">
-    <a class="brand" href="/joltdrum/" aria-label="JoltDrum home">
-      <span class="word" aria-hidden="true"><span class="jolt">JOLT</span><span class="drum">DRUM</span></span>
-      <span class="by">by Spark &amp; Grow</span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="/">Home</a>
-      <a href="/joltdrum/support/">Support</a>
-      <a class="soon" href="#get">Coming soon</a>
-    </nav>
+    <div class="brand">
+      <a class="word" href="/joltdrum/" aria-label="JoltDrum home"><span class="jolt">Jolt</span><span class="drum">Drum</span></a>
+      <a class="by" href="/">by <picture><source media="(max-width:560px)" srcset="/assets/brand/symbol.svg"><img src="/assets/brand/lockup.svg" width="296" height="76" alt="Spark &amp; Grow Music"></picture></a>
+    </div>
+    <div class="right">
+      <span class="rule" aria-hidden="true"></span>
+      <nav class="nav" aria-label="Main">
+        <a class="hide-m" href="/">Home</a>
+        <a class="hide-s" href="/joltdrum/support/">Support</a>
+        <a class="soon" href="#get">Coming soon</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<main id="main">
-<section class="hero" aria-labelledby="h-hero">
-  <div class="sky" aria-hidden="true"></div>
-  <video class="tree" autoplay muted loop playsinline preload="auto" aria-hidden="true" disablepictureinpicture><source media="(max-width:900px)" src="/assets/jolt-narrow.mp4" type="video/mp4"><source src="/assets/jolt-wide.mp4" type="video/mp4"></video>
-  <div class="wrap grid">
-    <div>
-      <p class="eyebrow"><b>New</b> · For iPhone</p>
-      <h1 id="h-hero" aria-label="JoltDrum"><span class="jolt">Jolt</span><span>Drum</span></h1>
-      <p class="tag">Evolving Drum Synth</p>
-      <p class="lead">A drum synth that grows its own patterns and keeps them moving. Shape the beat with two faders, swap whole kits of synthesized sound, and play the effects by hand.</p>
-      <p class="eyebrow">Coming soon to the App Store</p>
-    </div>
-    <figure class="phone" style="margin:0">
-      <img src="/assets/shots/home.jpg" width="460" height="1000" fetchpriority="high" alt="JoltDrum on iPhone">
-    </figure>
+<main id="main" class="jdmain">
+<svg class="sky" viewBox="0 0 1440 2300" preserveAspectRatio="none" aria-hidden="true" focusable="false"><defs><linearGradient id="g1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1100" y2="0"><stop offset="0" stop-color="#38F5E0"/><stop offset=".55" stop-color="#38F5E0" stop-opacity=".9"/><stop offset="1" stop-color="#38F5E0" stop-opacity="0"/></linearGradient><linearGradient id="g2" gradientUnits="userSpaceOnUse" x1="1440" y1="0" x2="1100" y2="0"><stop offset="0" stop-color="#B58CFF"/><stop offset="1" stop-color="#B58CFF" stop-opacity="0"/></linearGradient><linearGradient id="g3" gradientUnits="userSpaceOnUse" x1="1440" y1="0" x2="1150" y2="0"><stop offset="0" stop-color="#FFB020"/><stop offset="1" stop-color="#FFB020" stop-opacity="0"/></linearGradient><linearGradient id="g4" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="420" y2="0"><stop offset="0" stop-color="#B58CFF"/><stop offset="1" stop-color="#B58CFF" stop-opacity="0"/></linearGradient><linearGradient id="g5" gradientUnits="userSpaceOnUse" x1="1440" y1="0" x2="1280" y2="0"><stop offset="0" stop-color="#38F5E0"/><stop offset="1" stop-color="#38F5E0" stop-opacity="0"/></linearGradient></defs><path class="t" stroke="url(#g1)" d="M-20 250C180 140 480 70 1000 50"/><path class="v" stroke="url(#g2)" d="M1460 250C1320 330 1200 470 1100 700"/><path class="a" stroke="url(#g3)" d="M1460 640C1350 720 1240 830 1150 980"/><path class="v" stroke="url(#g4)" d="M-20 1830C120 1740 260 1690 420 1660"/><path class="t" stroke="url(#g5)" d="M1460 1640C1400 1700 1340 1770 1290 1860"/><path class="v" stroke="url(#g4)" d="M-20 1020C110 980 250 960 420 955"/></svg>
+<section class="wrap jhero" aria-labelledby="h-hero">
+  <div>
+    <h1 id="h-hero"><span>Evolving</span><span class="k">Drum Synth</span></h1>
+    <p class="lead">A drum synth that grows its own patterns and keeps them moving, with sound and effects you play by hand.</p>
+    <p class="pill cyan">Coming soon to the App Store</p>
   </div>
+  <figure class="phone" style="margin:0">
+    <img src="/assets/shots/home.jpg" width="460" height="1000" fetchpriority="high" alt="JoltDrum on iPhone">
+  </figure>
 </section>
 
-<section class="sec" id="look" aria-labelledby="h-look">
-  <div class="wrap">
-    <div class="rv">
-      <div class="banner"><span class="idx">01</span><span class="cap">The sound</span><span class="rule"></span></div>
-      <h2 class="h2" id="h-look" style="margin-bottom:34px">Built to be <span class="k">played.</span></h2>
-    </div>
-    <div class="fxwrap">
-      <figure class="frame rv"><img class="fshot" src="/assets/shots/instrument-panel.jpg" width="1320" height="1133" loading="lazy" alt="JoltDrum on iPhone"></figure>
-      <figure class="frame rv"><img class="fshot" src="/assets/shots/s-pads.jpg" width="1320" height="1133" loading="lazy" alt="JoltDrum on iPhone"></figure>
-    </div>
-  </div>
+<section class="wrap" aria-label="The sound">
+  <figure class="panel rv" style="margin-bottom:0"><img src="/assets/shots/instrument-panel.jpg" width="1320" height="1133" loading="lazy" alt="Shaping a drum sound in JoltDrum"></figure>
+  <ul class="feats rv">
+    <li><span class="s" aria-hidden="true">/</span><p>One tap starts a beat</p></li>
+    <li><span class="s" aria-hidden="true">//</span><p>Shape every sound by hand</p></li>
+    <li><span class="s" aria-hidden="true">///</span><p>Patterns that keep evolving</p></li>
+  </ul>
 </section>
 
-<section class="sec" id="more" aria-labelledby="h-more">
-  <div class="wrap">
-    <div class="rv">
-      <div class="banner"><span class="idx">02</span><span class="cap">In your hands</span><span class="rule"></span></div>
-      <h2 class="h2" id="h-more">Made to <span class="k">keep playing.</span></h2>
-    </div>
-    <div class="cards four">
-      <article class="fc rv">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z"/></svg></span>
-        <h3>Always moving</h3>
-        <p>Every session sounds new, and the beat never sits still.</p>
-      </article>
-      <article class="fc rv">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16M12 4v16M18 4v16"/><rect x="4" y="13" width="4" height="3" rx="1"/><rect x="10" y="7" width="4" height="3" rx="1"/><rect x="16" y="11" width="4" height="3" rx="1"/></svg></span>
-        <h3>Hands-on sound</h3>
-        <p>Reach in and change the sound while it plays.</p>
-      </article>
-      <article class="fc rv">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="8" cy="10" r="1"/><circle cx="16" cy="10" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="9.5" cy="14.5" r="1"/><circle cx="14.5" cy="14.5" r="1"/></svg></span>
-        <h3>Plays with your gear</h3>
-        <p>Optional MIDI clock keeps it in time with the rest of your setup.</p>
-      </article>
-      <article class="fc rv">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M16 15l4 3-4 3z"/></svg></span>
-        <h3>Learn as you go</h3>
-        <p>Built-in tutorials show you around whenever you want them.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="get" aria-labelledby="h-get">
-  <div class="wrap">
-    <div class="band rv">
-      <div class="banner"><span class="idx">03</span><span class="cap">Availability</span><span class="rule"></span></div>
-      <h2 class="h2" id="h-get">Coming soon to the <span class="k">App Store.</span></h2>
-      <p class="lead">JoltDrum is on its way for iPhone.</p>
-      <div class="facts" role="list"><span role="listitem">No account</span><span role="listitem">No ads</span><span role="listitem">No tracking</span><span role="listitem">Works offline</span></div>
-      <div class="btns">
-        <a class="btn" href="/joltdrum/support/">Support</a>
-      </div>
-    </div>
-  </div>
+<section class="wrap get rv" id="get" aria-label="Availability">
+  <img class="icon" src="/assets/icons/joltdrum-app.jpg" width="180" height="180" loading="lazy" alt="JoltDrum app icon">
+  <span class="rule" aria-hidden="true"></span>
+  <p class="pill cyan" style="margin:0">Coming soon to the App Store</p>
 </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Spark &amp; Grow Music LLC. All rights reserved. JoltDrum and Spark &amp; Grow Music are trademarks of Spark &amp; Grow Music LLC. Apple, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+    <p class="c">© 2026 Spark &amp; Grow Music LLC</p>
     <nav aria-label="Footer">
-      <a href="/">Spark &amp; Grow Music</a>
-      <a href="/joltdrum/">JoltDrum</a>
-      <a href="/joltdrum/privacy/">Privacy</a>
+      <a href="/">Home</a>
       <a href="/joltdrum/support/">Support</a>
+      <a href="/joltdrum/privacy/">Privacy</a>
     </nav>
+    <p class="tm">JoltDrum and Spark &amp; Grow Music are trademarks of Spark &amp; Grow Music LLC. Apple, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
   </div>
 </footer>
 </body>

@@ -22,20 +22,22 @@
 <script>document.documentElement.classList.add('js')</script>
 <script src="/assets/site.js" defer></script>
 </head>
-<body>
+<body class="jd">
 <a class="skip" href="#main">Skip to content</a>
-<header class="top">
+<header class="top jdtop">
   <div class="wrap">
-    <a class="brand" href="/joltdrum/" aria-label="JoltDrum home">
-      <span class="word" aria-hidden="true"><span class="jolt">JOLT</span><span class="drum">DRUM</span></span>
-      <span class="by">by Spark &amp; Grow</span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="/">Home</a>
-      <a href="/joltdrum/">JoltDrum</a>
-      <a href="/joltdrum/support/" aria-current="page">Support</a>
-      <a class="hide-s" href="/joltdrum/privacy/">Privacy</a>
-    </nav>
+    <div class="brand">
+      <a class="word" href="/joltdrum/" aria-label="JoltDrum home"><span class="jolt">Jolt</span><span class="drum">Drum</span></a>
+      <a class="by" href="/">by <picture><source media="(max-width:560px)" srcset="/assets/brand/symbol.svg"><img src="/assets/brand/lockup.svg" width="296" height="76" alt="Spark &amp; Grow Music"></picture></a>
+    </div>
+    <div class="right">
+      <span class="rule" aria-hidden="true"></span>
+      <nav class="nav" aria-label="Main">
+        <a class="hide-m" href="/">Home</a>
+        <a class="hide-s" href="/joltdrum/support/" aria-current="page">Support</a>
+        <a class="soon" href="#get">Coming soon</a>
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -65,13 +67,13 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Spark &amp; Grow Music LLC. All rights reserved. JoltDrum and Spark &amp; Grow Music are trademarks of Spark &amp; Grow Music LLC. Apple, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+    <p class="c">© 2026 Spark &amp; Grow Music LLC</p>
     <nav aria-label="Footer">
-      <a href="/">Spark &amp; Grow Music</a>
-      <a href="/joltdrum/">JoltDrum</a>
-      <a href="/joltdrum/privacy/">Privacy</a>
+      <a href="/">Home</a>
       <a href="/joltdrum/support/">Support</a>
+      <a href="/joltdrum/privacy/">Privacy</a>
     </nav>
+    <p class="tm">JoltDrum and Spark &amp; Grow Music are trademarks of Spark &amp; Grow Music LLC. Apple, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
   </div>
 </footer>
 </body>
